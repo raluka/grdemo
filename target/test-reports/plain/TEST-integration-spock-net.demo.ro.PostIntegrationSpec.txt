@@ -1,0 +1,28 @@
+Testsuite: net.demo.ro.PostIntegrationSpec
+Tests run: 4, Failures: 1, Errors: 0, Time elapsed: 0.48 sec
+
+Testcase: Adding posts to user links post to user took 0.366 sec
+Testcase: Ensure posts linked to a user can be retrieved took 0.018 sec
+Testcase: Exercise tagging several posts with various tags took 0.067 sec
+	FAILED
+Condition not satisfied:
+
+joe.tags*.name == ['groovy', 'grails']
+|   |     |    |
+|   |     |    false
+|   |     [grails, groovy]
+|   [net.demo.ro.Tag : (unsaved), net.demo.ro.Tag : (unsaved)]
+net.demo.ro.User : 3
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+joe.tags*.name == ['groovy', 'grails']
+|   |     |    |
+|   |     |    false
+|   |     [grails, groovy]
+|   [net.demo.ro.Tag : (unsaved), net.demo.ro.Tag : (unsaved)]
+net.demo.ro.User : 3
+
+	at net.demo.ro.PostIntegrationSpec.Exercise tagging several posts with various tags(PostIntegrationSpec.groovy:49)
+
+Testcase: Ensure a user can follow other users took 0.012 sec

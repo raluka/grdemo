@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="1" hostname="ralucagarba-PC" id="0" name="PostIntegrationSpec" package="net.demo.ro" tests="4" time="0.48" timestamp="2013-07-01T00:08:35">
+      <properties />
+
+      <testcase classname="net.demo.ro.PostIntegrationSpec" name="Adding posts to user links post to user" time="0.366" />
+
+      <testcase classname="net.demo.ro.PostIntegrationSpec" name="Ensure posts linked to a user can be retrieved" time="0.018" />
+
+      <testcase classname="net.demo.ro.PostIntegrationSpec" name="Exercise tagging several posts with various tags" time="0.068">
+          <failure message="Condition not satisfied:&#xa;&#xa;joe.tags*.name == [&apos;groovy&apos;, &apos;grails&apos;]&#xa;|   |     |    |&#xa;|   |     |    false&#xa;|   |     [grails, groovy]&#xa;|   [net.demo.ro.Tag : (unsaved), net.demo.ro.Tag : (unsaved)]&#xa;net.demo.ro.User : 3&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+joe.tags*.name == [&apos;groovy&apos;, &apos;grails&apos;]
+|   |     |    |
+|   |     |    false
+|   |     [grails, groovy]
+|   [net.demo.ro.Tag : (unsaved), net.demo.ro.Tag : (unsaved)]
+net.demo.ro.User : 3
+
+	at net.demo.ro.PostIntegrationSpec.Exercise tagging several posts with various tags(PostIntegrationSpec.groovy:49)
+</failure>
+
+      </testcase>
+
+      <testcase classname="net.demo.ro.PostIntegrationSpec" name="Ensure a user can follow other users" time="0.012" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+</testsuites>
